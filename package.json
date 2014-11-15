@@ -1,0 +1,19 @@
+{
+  "name": "angular-starter",
+  "version": "1.0.0",
+  "description": "Learning Angular project",
+  "main": "main.js",
+  "scripts": {
+    "test": "jasmine-node --match-all ./tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Actonate/angular-starter.git"
+  },
+  "author": "Actonate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Actonate/angular-starter/issues"
+  },
+  "homepage": "https://github.com/Actonate/angular-starter"
+}
