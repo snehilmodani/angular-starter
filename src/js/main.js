@@ -1,4 +1,4 @@
-var starterApp = angular.module('StarterApp',[]);
+var starterApp = angular.module('StarterApp',[]); //[] is for all the dependencies of the StarterApp
 
 
 starterApp.controller('NotesController', function($scope, $timeout){
