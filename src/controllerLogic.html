@@ -9,10 +9,10 @@
 
 
 </head>
-<body ng-controller="NotesController">
+<body ng-controller="TextLimitController">
   <h1>Controller Logic</h1>
   <div class="container">
-	  <div class="row" ng-controller="TextLimitController">
+	  <div class="row">
 	  	<textarea ng-model="message">{{message}}</textarea>
 	  	<span>Remaining {{remaining()}}</span>
 	  </div>

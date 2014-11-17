@@ -11,10 +11,7 @@ starterApp.controller('NotesController', function($scope, $timeout){
 
     }, 2000);
 });
-var clear = function(){
-        alert($scope.message);
-        $scope.message="";
-    };
+
 starterApp.controller('TextLimitController', function($scope){
     $scope.MAX_LENGHT=100;
     $scope.message="Hello World";
@@ -25,19 +22,22 @@ starterApp.controller('TextLimitController', function($scope){
         return $scope.MAX_LENGHT - $scope.message.length;
     };
     $scope.hasValidLength = function(){
-        console.log($scope.remaining);
+        console.log($scope.remaining());
         if(this.remaining > 0)
-        {
-            console.log(true);
-            return true;
-        }
-        else
         {
             console.log(false);
             return false;
         }
+        else
+        {
+            console.log(true);
+            return true;
+        }
     };
-    
+    $scope.clear = function(){
+       //alert($scope.message);
+        $scope.message="";
+    };
     
     
 
