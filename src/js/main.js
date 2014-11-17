@@ -25,36 +25,17 @@ starterApp.controller('TextLimitController', function($scope){
         console.log($scope.remaining());
         if(this.remaining > 0)
         {
-            console.log(false);
+            //console.log(false);
             return false;
         }
         else
         {
-            console.log(true);
+            //console.log(true);
             return true;
         }
     };
     $scope.clear = function(){
-       //alert($scope.message);
+       //console.log($scope.message);
         $scope.message="";
     };
-    
-    
-
-    // $scope.test.remaining = function(){
-    //     alert(MAX_LENGHT);
-    //     alert($scope.test.message.length);
-    // 	return $scope.MAX_LENGHT - $scope.test.message.length;
-    // };
-
-    // $scope.test.hasValidLength = function(){
-    // 	if($scope.remaining() > 0)
-    // 	{
-    // 		return true;
-    // 	}
-    // 	else
-    // 	{
-    // 		return false;
-    // 	}
-    // };
 });
