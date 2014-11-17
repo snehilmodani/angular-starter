@@ -22,16 +22,16 @@ starterApp.controller('TextLimitController', function($scope){
         return $scope.MAX_LENGHT - $scope.message.length;
     };
     $scope.hasValidLength = function(){
-        console.log($scope.remaining());
-        if(this.remaining > 0)
-        {
-            //console.log(false);
-            return false;
-        }
-        else
+        //console.log($scope.remaining());
+        if($scope.remaining() > 0)
         {
             //console.log(true);
             return true;
+        }
+        else
+        {
+            //console.log(false);
+            return false;
         }
     };
     $scope.clear = function(){
