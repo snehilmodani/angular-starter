@@ -6,23 +6,19 @@
   <!-- Angular JS (bower install angular) -->
   <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
-
+  
 </head>
 <body ng-controller="TextLimitController">
   <h1>Controller Logic</h1>
   <div class="container">
 	  <div class="row">
 	  	<textarea ng-model="message"></textarea>
-	  	<span>Remaining {{remaining()}}</span>
+	  	<span>Remaining <span ng-bind="remaining()"></span></span>
 	  </div>
 	  <div class="row">
 	  	<button ng-disabled="!hasValidLength()" ng-click="send()">Send</button>
-	  	<button ng-click="clear()">Clear {{remaining}}</button>
+	  	<button ng-click="clear()">Clear</button>
 	  </div>
   </div>
-  <!--<p ng-bind="test.message"></p>-->
-
-
 </body>
 </html>
