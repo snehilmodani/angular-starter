@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="DIApp">
+<head>
+  <title>DI Test</title>
+
+  <!-- Angular JS (bower install angular) -->
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/diTest.js"></script>
+  
+</head>
+<body ng-controller="UIController">
+  <h1>DI Test</h1>
+  <h5 ng-bind="appStarted"></h5>
+  <div class="container">
+	  <div class="row">
+	  	x:<input type="text" ng-model="x">
+	  	<br>
+	  	y:<input type="text" ng-model="y">
+	  	<br>
+	  	z:<input type="text" ng-model="z">
+	  	<br>
+	  	a:<input type="text" ng-model="a">
+	  </div>
+  </div>
+</body>
+</html>
