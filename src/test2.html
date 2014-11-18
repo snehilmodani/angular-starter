@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <title>Angular Starter</title>
+
+  <!-- Angular JS (bower install angular) -->
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/app2.js"></script>
+
+
+</head>
+<body ng-app="StarterApp">
+  <ul ng-controller="WrldCtrl">
+    <li ng-repeat="country in countries">
+      {{country.name}} has population of {{country.population}}
+    </li>
+    <hr>
+    World's population: {{population}} millions
+    <hr>
+    <li ng-repeat="country in countries">
+      {{country.name}} has population of {{country.population}},
+      {{wPercent(country.population)}}% of the world's population
+    </li>
+  </ul>
+</body>
+</html>
