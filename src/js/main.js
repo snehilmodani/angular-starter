@@ -30,6 +30,7 @@ starterApp.controller('TextLimitController', function($scope){
         }
         else
         {
+            //test
             //console.log(false);
             return false;
         }

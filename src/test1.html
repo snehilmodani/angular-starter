@@ -10,6 +10,8 @@
 </head>
 <body ng-app ng-init="name = 'World'">
   Say hello to: <input type="text" ng-model="name">
-  <h1>Hello, {{name}}!</h1>
+  <!--<h1>Hello, {{name}}!</h1>-->
+  <!--Best Practice-->
+  <h1>Hello, <span ng-bind="name"></span>!</h1>
 </body>
 </html>

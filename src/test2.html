@@ -11,15 +11,28 @@
 </head>
 <body ng-app="StarterApp">
   <ul ng-controller="WrldCtrl">
-    <li ng-repeat="country in countries">
+    <!-- <li ng-repeat="country in countries">
       {{country.name}} has population of {{country.population}}
-    </li>
-    <hr>
-    World's population: {{population}} millions
-    <hr>
+    </li> -->
+    <!--Best Practice-->
     <li ng-repeat="country in countries">
+      <span ng-bind="country.name"></span> has population of <span ng-bind="country.population"></span> million
+    </li>
+    <!-- <hr>
+    World's population: {{population}} millions
+    <hr> -->
+    <!--Best Practice-->
+    <hr>
+    World's population: <span ng-bind="population"></span> million
+    <hr>
+    <!-- <li ng-repeat="country in countries">
       {{country.name}} has population of {{country.population}},
       {{wPercent(country.population)}}% of the world's population
+    </li> -->
+    <!--Best Practice-->
+    <li ng-repeat="country in countries">
+      <span ng-bind="country.name"></span> has population of <span ng-bind="country.population"></span>, 
+      <span ng-bind="wPercent(country.population)"></span>% of the world's population
     </li>
   </ul>
 </body>
