@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="tablePrintApp">
+<head>
+  <title>Angular Starter</title>
+
+  <!-- Angular JS (bower install angular) -->
+  <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="js/tablePrint.js"></script>
+
+
+</head>
+<body ng-controller="tablePrintController">
+  <!-- <table>
+  	<tbody ng-repeat="user in users" ng-click="selectUser(user)" ng-switch on="isSelected(user)">
+  		<tr>
+  			<td ng-bind="user.name"></td>
+  			<td ng-bind="user.email"></td>
+  		</tr>
+  		<tr ng-switch-when="true">
+  			<td colspan='2' ng-bind="user.description"></td>
+  		</tr>
+  	</tbody>
+  </table> -->
+  <br>
+
+  <table>
+  	<tbody ng-repeat="user in users" ng-click="toggleSelected(user)" ng-switch on="isSelected(user)">
+  		<tr>
+  			<td ng-bind="user.name"></td>
+  			<td ng-bind="user.email"></td>
+  		</tr>
+  		<tr ng-switch-when="true">
+  			<td colspan='2' ng-bind="user.description"></td>
+  		</tr>
+  	</tbody>
+  </table>
+
+</body>
+</html>
